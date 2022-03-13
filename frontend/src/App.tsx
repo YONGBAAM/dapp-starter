@@ -1,6 +1,7 @@
 import React, { FC, useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
+import Inventory from "./routes/inventory";
 
 import Main from "./routes/main";
 import MyAnimal from "./routes/my-animal";
@@ -19,7 +20,6 @@ const App: FC = () => {
 
         setAccount(accounts[0])
 
-        alert(account)
       }
       else {
         alert("Install Metamask")
@@ -42,6 +42,10 @@ const App: FC = () => {
           <Route
             path="sale-animal"
             element={<SaleAnimal account={account} />}
+          />
+          <Route
+            path="inventory"
+            element={<Inventory account={account} />}
           />
         </Routes>
       </Layout>

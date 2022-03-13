@@ -74,6 +74,7 @@ const MyAnimal: FC<MyAnimalProps> = ({ account }) => {
             console.error(error);
         }
     };
+    
     useEffect(() => {
         if (!account) return;
         getIsApprovedForAll();

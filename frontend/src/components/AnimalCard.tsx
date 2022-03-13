@@ -8,7 +8,9 @@ interface AnimalCardProps {
 const AnimalCard: FC<AnimalCardProps> = ({ animalType }) => {
   return (
     // todo: change to text
+    // todo: add id
     <Box>
+    
       <Text>type: {animalType}</Text>
     </Box>
 

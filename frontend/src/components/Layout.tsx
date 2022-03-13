@@ -31,6 +31,11 @@ const Layout: FC = ({ children }) => { // size  = " 하면 이렇게 자동완�
             Sale Animal
           </Button>
         </Link>
+        <Link to="inventory">
+          <Button size="sm" colorScheme="purple">
+            Inventory
+          </Button>
+        </Link>
       </Flex>
       <Flex
         direction="column"
