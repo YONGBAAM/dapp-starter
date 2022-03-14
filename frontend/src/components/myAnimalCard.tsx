@@ -11,6 +11,7 @@ import React, { ChangeEvent, FC, useState } from "react";
 import { mintAnimalTokenContract, saleAnimalTokenContract, web3 } from "../web3Config";
 
 import AnimalCard from "./AnimalCard";
+import { url } from "./InventoryItem";
 
 export interface IMyAnimalCard {
     animalTokenId: string;
@@ -65,7 +66,6 @@ const MyAnimalCard: FC<MyAnimalCardProps> = ({
         }
     };
 
-    const url = "http://localhost:10001"
     const changgo = "0xc9B7F6CB9Ee166f4d113B5394A05E346048628d1"
 
     const onClickDeposit = async () => {

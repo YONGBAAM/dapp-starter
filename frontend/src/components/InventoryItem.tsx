@@ -10,6 +10,9 @@ export interface InventoryItemProps {
     account:string
 }
 
+export const url = "http://3.35.14.61:8080"
+
+
 const InventoryItem: FC<InventoryItemProps> = ({ itemId, nftId, ownerWalletAddress, nftDescription , account}) => {
 
     const [password, setPassword] = useState<string>('');
@@ -22,8 +25,6 @@ const InventoryItem: FC<InventoryItemProps> = ({ itemId, nftId, ownerWalletAddre
     const onChangePassword = (e: ChangeEvent<HTMLInputElement>) => {
         setPassword(e.target.value);
     };
-
-    const url = "http://localhost:10001"
 
     const onClickRetrieve = async () => {
         try {

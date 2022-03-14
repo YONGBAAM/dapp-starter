@@ -1,7 +1,7 @@
 
 import React, { FC, useEffect, useState } from "react";
 import { Button, List, ListItem, OrderedList, Text } from "@chakra-ui/react"
-import InventoryItem, { InventoryItemProps } from "../components/InventoryItem";
+import InventoryItem, { InventoryItemProps, url } from "../components/InventoryItem";
 
 import axios from "axios"
 
@@ -9,7 +9,7 @@ interface InventoryProps {
     account: string;
 
 }
-const url = "http://localhost:10001"
+
 
 const Inventory: FC<InventoryProps> = ({ account }) => {
 
@@ -19,7 +19,7 @@ const Inventory: FC<InventoryProps> = ({ account }) => {
 
     const getItemList = async () => {
         try {
-            const response = await axios.get(url + "/items")
+            const response = await axios.get(url + "/items/" + account)
             const tt: InventoryItemProps[] = [];
             response.data.map((v: InventoryItemProps) => {
                 tt.push(v)
