@@ -1,7 +1,8 @@
 # dapp-starter
 NFT trade Dapp
 
-This is based on h662 Lecture in Inflearn.
+This is based on Lecture at Inflearn
+https://github.com/h662/h662Animals-frontend
 
 This is deployed at http://13.125.133.231:3000/
 You need to install metamask in Chrome and add Polygon Testnet(Mumbai) wallet.
