@@ -1,3 +1,6 @@
+#Deprecated
+This is migrated to more fancy NFT Dapp in p2egame-nft repo
+
 # dapp-starter
 NFT trade Dapp
 
